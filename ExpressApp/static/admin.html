@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<style>
+    #slots div{
+        padding: 10px;
+        background-color: cornflowerblue;
+        margin: 1px;
+    }
+</style>
+<body>
+    <h1>Admin Page</h1>
+    <ul>
+        <li>
+            <a href="/">Home</a>
+        </li>
+        <li>
+            <a href="/admin">Manage Time slot</a>
+        </li>
+    </ul>
+    <form action="/add-doodle" method="POST">
+        <div id="slots" style="display: flex;">
+            <div>
+                <input type="text" placeholder="Your name"> 
+            </div>
+            <div>
+                <input type="checkbox" name="slot1" id="slot1"> <label for="slot1">Time 1</label>
+            </div>
+            <div>
+                <input type="checkbox" name="slot2" id="slot2"> <label for="slot2">Time 2</label>
+            </div>
+            <div>
+                <input type="checkbox" name="slot3" id="slot3"> <label for="slot3">Time 3</label>
+            </div>
+            <div>
+                <input type="checkbox" name="slot4" id="slot4"> <label for="slot4">Time 4</label>
+            </div>
+            <div>
+                <input type="checkbox" name="slot5" id="slot5"> <label for="slot5">Time 5</label>
+            </div>
+            <div>
+                <input type="checkbox" name="slot6" id="slot6"> <label for="slot6">Time 6</label>
+            </div>
+            <div>
+                <input type="checkbox" name="slot7" id="slot7"> <label for="slot7">Time 7</label>
+            </div>
+            <div>
+                <input type="checkbox" name="slot8" id="slot8"> <label for="slot8">Time 8</label>
+            </div>
+            <div>
+                <input type="checkbox" name="slot9" id="slot9"> <label for="slot9">Time 9</label>
+            </div>
+            <div>
+                <input type="checkbox" name="slot10" id="slot10"> <label for="slot10">Time 10</label>
+            </div>
+        </div>
+        <button>Add</button>
+    </form>
+
+</body>
+
+</html>
