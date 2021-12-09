@@ -16,7 +16,7 @@ connection.query(`CREATE TABLE IF NOT EXISTS Person(username varchar(20),passwor
     connection.query(`INSERT INTO Person(username, password) VALUES('admin', 'admin')`)
 })
 
-connection.query(`CREATE TABLE IF NOT EXISTS ava (slot1 tinyint(4) DEFAULT 1,slot2 tinyint(4) DEFAULT 1,slot3 tinyint(4) DEFAULT 1,slot4 tinyint(4) DEFAULT 1,slot5 tinyint(4) DEFAULT 1,slot6 tinyint(4) DEFAULT 1,slot7 tinyint(4) DEFAULT 1,slot8 tinyint(4) DEFAULT 1,slot9 tinyint(4) DEFAULT 1,slot10 tinyint(4) DEFAULT 1)`, (error, rows, fields) => {
+connection.query(`CREATE TABLE IF NOT EXISTS Ava (slot1 tinyint(4) DEFAULT 1,slot2 tinyint(4) DEFAULT 1,slot3 tinyint(4) DEFAULT 1,slot4 tinyint(4) DEFAULT 1,slot5 tinyint(4) DEFAULT 1,slot6 tinyint(4) DEFAULT 1,slot7 tinyint(4) DEFAULT 1,slot8 tinyint(4) DEFAULT 1,slot9 tinyint(4) DEFAULT 1,slot10 tinyint(4) DEFAULT 1)`, (error, rows, fields) => {
     if (error) {
         console.log(error);
         return;
