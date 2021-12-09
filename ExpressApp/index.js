@@ -1,5 +1,5 @@
 const express = require('express');
-const port = 2000;
+const port = 80;
 
 const app = express();
 const cookieParser = require('cookie-parser');
